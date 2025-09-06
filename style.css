@@ -1,0 +1,108 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #4b2e2e, #d4af37);
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Header */
+header {
+  padding: 50px 20px;
+}
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+  border-radius: 40px;
+}
+header h1 {
+  font-size: 2.5em;
+  color: #ffd700;
+}
+header p {
+  margin: 10px 0 20px;
+  font-size: 1.2em;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 25px;
+  background: #000;
+  color: #ffd700;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255,215,0,0.5);
+}
+.btn:hover {
+  background: #ffd700;
+  color: #000;
+  box-shadow: 0 0 20px rgba(255,215,0,0.8);
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+h2 {
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+ul li, ol li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+/* FAQ */
+.faq-item {
+  margin: 15px 0;
+}
+.faq-item h3 {
+  color: #ffd700;
+  margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background: #000;
+  color: #ffd700;
+  font-size: 0.9em;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+  .btn {
+    width: 70%;
+  }
+}
